@@ -56,10 +56,14 @@ nav > ul {
     display: flex;
     justify-content: center;
     gap: 32px;
+    flex-wrap: wrap;
+    padding: 16px;
 }
 
 .quote {
     background-color: #e5e7eb;
+    padding: 32px 128px;
+    margin-top: 64px;
 }
 
 .signup,
@@ -88,6 +92,11 @@ h2 {
     font-weight: 900;
     color: #1f2937;
     text-align: center;
+    margin: 48px 24px;
+}
+
+h3 {
+    margin: 0;
 }
 
 a,
@@ -107,11 +116,6 @@ a,
 
 .info {
     margin: 64px 0;
-}
-
-.quote {
-    padding: 32px 128px;
-    margin-top: 64px;
 }
 
 cite {
@@ -136,10 +140,11 @@ blockquote {
 .cta-block {
     color: white;
     border-radius: 5px;
-    padding: 8px 64px;
+    padding: 32px 64px;
     flex: 1;
     max-width: 700px;
     display: flex;
+    gap: 64px;
     justify-content: space-between;
 }
 
@@ -147,8 +152,8 @@ blockquote {
 
 .hero-image {
     background-color: #2e3c51;
-    height: 230px;
-    width: 368px;
+    height: 200px;
+    width: 400px;
     display: block;
     flex-shrink: 0;
 }
@@ -166,10 +171,64 @@ blockquote {
 .media {
     text-align: center;
     margin: 0;
+}
+
+figcaption {
     max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-block > .signup {
     outline: 2px solid white;
     align-self: center;
+    flex-shrink: 0;
+}
+
+/* responsive */
+
+@media (max-width: 950px) {
+    .top {
+        padding: 16px 8px;
+    }
+    
+    .header {
+        margin: 16px;
+    }
+
+    .hero-image {
+        order: -1;
+        width: 100vw;
+        height: 50vw;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .media {
+        min-width: 35%;
+    }
+
+    .quote {
+        padding: 16px 16px;
+    }
+
+    blockquote {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .cta-block {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cta-block > .signup {
+        align-self: flex-start;
+    }
 }
