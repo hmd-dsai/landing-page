@@ -1,0 +1,65 @@
+/* type rules */
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* section rules */
+
+.top,
+footer {
+    background-color: #1f2937;
+    color: #f9faf8
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.signup,
+.cta-block {
+    background-color: #3882f6;
+}
+
+/* font styles */
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+a,
+.sublime {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+blockquote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
