@@ -16,14 +16,46 @@ nav > ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 16px;
 }
 
 /* section rules */
 
 .top,
-footer {
+.footer {
     background-color: #1f2937;
     color: #f9faf8
+}
+
+.top {
+    padding: 16px 15%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.hero {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
 
 .quote {
@@ -35,17 +67,27 @@ footer {
     background-color: #3882f6;
 }
 
+.signup {
+    padding: 8px 32px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+}
+
 /* font styles */
 
 h1 {
     font-size: 48px;
     font-weight: 900;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
+    text-align: center;
 }
 
 a,
@@ -54,12 +96,80 @@ a,
     color: #e5e7eb;
 }
 
+.sublime {
+    margin-bottom: 32px;
+}
+
 .logo {
     font-size: 24px;
+    margin-right: auto;
+}
+
+.info {
+    margin: 64px 0;
+}
+
+.quote {
+    padding: 32px 128px;
+    margin-top: 64px;
+}
+
+cite {
+    font-weight: 700;
+    text-align: right;
+    display: block;
 }
 
 blockquote {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+}
+
+.cta-block {
+    color: white;
+    border-radius: 5px;
+    padding: 8px 64px;
+    flex: 1;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* individual */
+
+.hero-image {
+    background-color: #2e3c51;
+    height: 230px;
+    width: 368px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.info-image {
+    background-color: #eee;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 16px;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+}
+
+.media {
+    text-align: center;
+    margin: 0;
+    max-width: 200px;
+}
+
+.cta-block > .signup {
+    outline: 2px solid white;
+    align-self: center;
 }
